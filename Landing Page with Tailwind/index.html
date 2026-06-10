@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind Landing Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+</head>
+<body class="bg-[url('BK-LGT.jpg')] bg-cover justify-center item-center shrink-0">
+
+  <section class="card relative w-[95%] md:w-3/4 max-w-4xl mx-auto bg-[url('BK-LGT.jpg')] bg-cover border border-blue-400 rounded-lg shadow-lg flex md:flex-row my-10 sm:pl-15 over-flow-hidden">
+    <img src="lg-.png" alt="" class="absolute top-4 left-1 w-30 opacity-30 -translate-x-1/2 -translate-y-1/2 pointer-events-none -z-0">
+
+    <!-- <img src="lig.png" alt="" class="absolute -top-6 -left-6 w-12 h-12 z-10"> -->
+    <main class="relative z-10 px-1 mt-5">
+      <header class="relative flex md:flex-row items-center justify-between gap-23 text-sm">
+        <h4>
+          <span class="font-bold">Graphics</span>Family
+        </h4>
+        <nav class="flex flex-nowrap items-center gap-5 text-white ml-auto">
+
+            <ul class="flex items-center gap-4">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Designer</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+            <button style="font-size:24px whitespace-nowrap"><i class="fa fa-search"> SIGN UP</i></button>
+
+        </nav>
+        
+
+      </header>
+
+      <section class="flex-col gap-2 py-15">
+
+        <div class="mb-7">
+          <h1 class="font-bold text-3xl md:text-5xl text-blue-900">
+            Creative
+          </h1>
+          <h3 class="font-semibold text-xl md:text-3xl text-blue-900">
+            exhibition
+          </h3>
+          <p class="text-white">
+            Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Voluptas, voluptate.
+          </p>
+        </div>
+
+        
+
+        <div class="mt-1">
+          <botton class="bg-sky-600 rounded-full px-5 py-2 text-white hover:bg-sky-700 transition-colors">Learn More</botton>
+          <p class=" mt-2">
+            <a href="www.graphicsfamily.com" class="text-blue-900 ">www.graphicsfamily.com</a>
+          </p>
+        
+          <div class="flex md:flex-row md:gap-9 items-center justify-between">
+            <div class="row flex gap-4 ">
+              <i class="fa fa-youtube-play border-2 rounded-full"></i>
+              <i class="fa fa-twitter border-2 rounded-full"></i>
+              <i class="fa fa-facebook border-3 rounded-full"></i>
+            </div>
+          
+            <p class="whitespace-nowrap">
+              4K - Layout
+            </p>
+            <img src="lig.png" alt="Ring Light" class="w-30 md:w-55 h-auto ">
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    <aside class="hidden lg:block absolute right-6 top-1/2 -translate-y-1/2 font-bold text-4xl">
+      <p class="text-blue-800">.</p>
+      <p class="text-white">.</p>
+      <p class="text-white">.</p>
+      <p class="text-white">.</p>
+    </aside>
+
+  </section>
+  
+</body>
+</html>
