@@ -1,0 +1,410 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  font-size: 10px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 130px;
+}
+.container{
+  background-image: url(img/bl-lg.jpg);
+  box-sizing: border-box;
+  padding: 30px 0 0 20px;
+  max-width: 950px;
+  margin: 0 auto;  
+  overflow: hidden;
+}
+  
+.container-flex{
+  background-color: white;
+  display: flex;
+  width: 100%;
+  height: 400px;
+}
+
+.hero{
+  box-sizing: border-box;
+  max-height: 300px;
+  flex: 3;
+  background-image: url("img/Boat.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-box{
+  box-sizing: border-box;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hero-header{
+  display: block;
+  box-sizing: border-box;
+}
+.header-1{
+  background-color: white;
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+}
+.nav-1{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+}
+ul{
+  list-style: none;
+  display: flex;
+  gap: 60px;
+}
+ul li{
+  list-style: none;
+  color: blue;
+}
+.nav-1-button{
+  background-color: red;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 0 5px;
+}
+
+.header-2{
+  flex-wrap: nowrap;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+
+}
+.header-h1{
+  font-size: clamp(1rem, 2vh, 2rem);
+  padding: 0 30px;
+  background-color: red;
+}
+.nav-2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  justify-content: space-evenly;
+
+}
+ol{
+  display: flex;
+  gap: 80px;
+  list-style: none;
+  margin-left: 100px;
+
+}
+
+.hero-flex{
+  display: flex;
+  background-color: white;
+  margin-top: 200px;
+  padding: 15px 20px 0 25px;
+  font-size: xx-small;
+  font-size: 5px;
+}
+.hero-section{
+  justify-content: center;
+  flex: 8;
+}
+.hero-section-h3{
+  color: red;
+  font-size: 13px;
+  font-weight: bold;
+}
+.hero-side{
+  flex: 1;
+  padding: 0 0px 0 6px;
+  text-wrap: nowrap;
+}
+
+/* Aside */
+.aside{
+  flex: 1;
+  margin-top: -1rem;
+  padding-right: 10px;
+  font-size: 4px;
+  background-color: white;
+  max-width: 200px;
+}
+.aside-section{
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  background-color: white;
+  box-shadow: 10px;
+}
+.img-aside{
+  width: auto;
+}
+.aside-p{
+  margin: 4px 0;
+}
+.aside-rectangle{
+  text-align: center;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  margin-top: 6px;
+}
+.aside-h4{
+  font-size: 7px;
+  color: red;
+  margin-top: 5px;
+}
+.aside-row{
+  flex-direction: row;
+  display: flex;
+  margin-top: 3px;
+}
+.card{
+  box-sizing: border-box;
+  text-wrap: wrap;
+  border:1px solid white;
+}
+.img-card{
+  width: 49px;
+}
+
+@media screen and (min-width: 800px) {
+  body{
+  background-color: black;
+  font-size: 10px;
+  min-height: 100vh;
+  margin-top: 170px;
+}
+  .container{
+    padding: 15px 0 0 10px;
+  }
+
+  .container-flex{
+    flex-direction: row;
+  }
+  .hero{
+    background-image: url('img/Boat.jpg');
+    background-position: center;    
+    min-height: auto;
+    min-width: none;
+  }
+  .hero-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .header-1{
+    width: auto;
+  }
+  .header-2{
+    width: auto;
+    margin-top: 10px;
+  }
+  .header-h1{
+    font-weight: 500;
+    padding: 0 30px;
+    background-color: orangered;
+  }
+  .nav-2{
+    background-color: white;
+    flex-direction: row;
+    padding-right: 3px;}
+
+  .nav-1{
+    flex-direction: row;
+  }
+  .nav-1-button{
+  background-color: red;
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 1px 15px;
+}
+
+  ul{
+    gap: 30px;
+    text-wrap: nowrap;
+  }
+  ol{
+    gap: 60px;
+    margin-left: 10px;
+  }
+  
+  .hero-flex{
+    flex-direction: row;
+    margin-top: 220px;
+  }
+
+  /* Aside */
+.aside{
+  flex: 1;
+  margin-top: -1rem;
+  font-size: 4px;
+  background-color: whitesmoke;
+  max-width: 200px;
+}
+.aside-section{
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  box-shadow: 10px;
+}
+.img-aside{
+  width: auto;
+}
+.aside-p{
+  margin: 5px 0;
+}
+.aside-rectangle{
+  text-align: center;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  margin-top: 8px;
+}
+.aside-h4{
+  font-size: 7px;
+  color: red;
+  margin-top: 8px;
+}
+.aside-row{
+  flex-direction: row;
+  display: flex;
+  margin-top: 5px;
+}
+.card{
+  box-sizing: border-box;
+  text-wrap: wrap;
+  border:1px solid white;
+}
+.img-card{
+  width: 49px;
+}
+
+}
+
+@media  screen and (max-width: 768px){
+  body{
+  background-color: black;
+  font-size: 10px;
+  min-height: 100vh;
+  margin-top: 75px;
+}
+  .container{
+    padding: 15px 0 0 10px;
+  }
+
+  .container-flex{
+    flex-direction: row;
+  }
+  .hero{
+    background-image: url('img/Boat.jpg');
+    background-position: center;    
+    min-height: auto;
+    min-width: none;
+  }
+  .hero-box{
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .header-1{
+    width: auto;
+    font-size: 5px;
+  }
+  .header-2{
+    width: auto;
+    font-size: 5px;
+    margin-top: 10px;
+  }
+  .header-h1{
+    font-weight: 500;
+    font-size: 10px;
+    padding: 0 10px;
+    background-color: orangered;
+  }
+  .nav-1{
+    flex-direction: row;
+  }
+  .nav-1-button{
+      background-color: red;
+      color: white;
+      border-radius: 20px;
+      border: 1px solid white;
+      padding: 2px 10px;
+  }
+  .nav-2{
+      background-color: white;
+      flex-direction: row;
+      padding-right: 3px;
+  }
+
+  ul{
+    gap: 3px;
+    text-wrap: nowrap;
+}
+  ol{
+    gap: 9px;
+    margin-left: 10px;
+  }
+  
+  .hero-flex{
+    flex-direction: row;
+    margin-top: 195px;
+    font-size: 4px;
+  }
+  .hero-section-h3{
+    font-size: 8px;
+  }
+
+  /* Aside */
+.aside{
+  flex: 1;
+  margin-top: -1rem;
+  font-size: 4px;
+  background-color: whitesmoke;
+  max-width: 200px;
+}
+.aside-section{
+  box-sizing: border-box;
+  box-shadow: 10px;
+}
+.img-aside{
+  width: auto;
+}
+.aside-p{
+  margin: 10px 0;
+}
+.aside-rectangle{
+  text-align: center;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  padding: 2px;
+  margin-top: 5px;
+}
+.aside-h4{
+  font-size: 7px;
+  color: red;
+  margin-top: 10px;
+}
+.aside-row{
+  flex-direction: row;
+  display: flex;
+  margin-top: 7px;
+}
+.card{
+  box-sizing: border-box;
+  text-wrap: wrap;
+  border:1px solid white;
+}
+
+}
